@@ -1,1 +1,1 @@
-#Learning Angular (and how to user Git)
+#Learning Angular (and how to use Git)

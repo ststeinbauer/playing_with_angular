@@ -2,11 +2,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title of the document</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="scripts/app/ss.WorkoutLog.js"></script>
+
+<title>Learning AngularJS</title>
+
 </head>
 
 <body>
-<p>Hello World</p>
+
+<div ng-app="ss.WorkoutLog">
+  <div>
+    <input type="text" ng-model="name" />
+  </div>
+  <div> {{ name | usPhoneNumber }} <br /></div>
+</div>
+
 </body>
 
 </html>

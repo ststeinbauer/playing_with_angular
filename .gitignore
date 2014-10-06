@@ -35,3 +35,8 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Libraries #
+#############
+scripts/app-tests/lib/*
+!scripts/app-tests/lib/ss.workoutLog.karma.conf.js

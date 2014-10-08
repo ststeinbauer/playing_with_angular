@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 
 <link rel="stylesheet" type="text/css" href="styles/common.css">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
 <script src="scripts/app/eos.WorkoutLog.js"></script>
 
 <title>Learning AngularJS | Home</title>
@@ -22,7 +22,20 @@
   </header>
 
   <div ng-controller="eos.WorkoutController">
-    {{ person.name }}
+    <div>
+      <div>
+        <input type="text" ng-model="currentMovement.movement" placeholder="Enter a movement" />
+      </div>
+      <div>
+        <input type="text" ng-model="currentMovement.reps" placeholder="Number of reps" />
+      <div>
+      <div>
+        <button ng-click="addMovement(currentMovement)">Add</button>
+      <div>
+    </div>
+    <div ng-repeat="w in movements">
+      <div>{{ w.movement }} - {{ w.reps}} reps
+    </div>
   </div>
 
 </div>

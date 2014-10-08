@@ -1,0 +1,9 @@
+body {
+    background-color: #fcfcfc;
+    font-family: Tahoma;
+}
+
+header {
+  font-size: 2em;
+  display: block;
+}

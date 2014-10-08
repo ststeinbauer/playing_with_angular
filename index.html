@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <meta charset="UTF-8">
 
 <link rel="stylesheet" type="text/css" href="styles/common.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-<script src="scripts/app/ss.WorkoutLog.js"></script>
+<script src="scripts/app/eos.WorkoutLog.js"></script>
 
 <title>Learning AngularJS | Home</title>
 
@@ -13,13 +15,17 @@
 
 <body>
 
-<header>
-  Log a Workout
-</header>
+<div ng-app="eos.WorkoutLog">
 
-<section>
+  <header>
+    Log a Workout
+  </header>
 
-</section>
+  <div ng-controller="eos.WorkoutController">
+    {{ person.name }}
+  </div>
+
+</div>
 
 </body>
 

@@ -40,3 +40,4 @@ Thumbs.db
 #############
 scripts/app-tests/lib/*
 !scripts/app-tests/lib/ss.workoutLog.karma.conf.js
+bin/node_modules/*

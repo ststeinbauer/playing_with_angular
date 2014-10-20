@@ -6,25 +6,31 @@
 <meta charset="UTF-8">
 
 <link rel="stylesheet" type="text/css" href="styles/common.css">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
 <script src="scripts/app/eos.WorkoutLog.js"></script>
 
 <title>Learning AngularJS | Home</title>
 
 </head>
 
-<body>
+<body ng-app="workoutLog">
 
-<div ng-app="eos.WorkoutLog">
-
-  <header>
-    Log a Workout
-  </header>
-
-  <div ng-controller="eos.WorkoutController">
-    {{ person.name }}
+<div class="workout" ng-controller="workoutController">
+  <div class="container">
+    <header>
+      {{ workout.name }}
+    </header>
+    <div class="workout-date">
+      {{workout.date}}
+    </div>
+    <div class="workout-description">
+      <ul>
+        <li ng-repeat="movement in workout.movements">
+          {{movement.name}} - ({{movement.reps}}) reps
+        </li>
+      </ul>
+    </div>
   </div>
-
 </div>
 
 </body>

@@ -9,7 +9,9 @@
   },
   "devDependencies": {
     "mongodb": "~2.0",
-    "karma":  "~0.12.24"
+    "karma":  "~0.12.0",
+    "karma-mocha" : "~0.1",
+    "karma-chrome-launcher" : "~0.1"
   },
   "author": "Shane Steinbauer",
   "license": "MIT",
